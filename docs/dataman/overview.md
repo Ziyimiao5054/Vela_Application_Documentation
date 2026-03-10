@@ -41,6 +41,17 @@ dataman.resume(token)
 | `timeHour` | 小时 | 0–23 |
 | `timeMinute` | 分钟 | 0–59 |
 | `timeSecond` | 秒 | 0–59 |
+| `dateDay` | 日期 | 未知 |
+| `dateMonth` | 月份 | 未知 |
+| `dateWeek` | 星期 | 未知 |
+| `systemStatusBattery` | 电池电量 | 未知 |
+| `timeHourHigh` | 高位小时 | 未知 |
+| `timeHourLow` | 低位小时 | 未知 |
+| `timeMinuteHigh` | 高位分钟 | 未知 |
+| `timeMinuteLow` | 低位分钟 | 未知 |
+| `timeSecondHigh` | 低位秒 | 未知 |
+| `timeSecondLow` | 低位秒 | 未知 |
+| `timeCentiSecond` | 厘秒 | 未知 |
 | `healthPressureIndex` | 压力指数 | 0–100 |
 | `systemSensorFusionAltitude` | 海拔（米） | 整数，INT_MAX 无效 |
 | `weatherCurrentSunRiseHour` | 日出时 | 0–23，INT_MAX 无效 |
@@ -50,6 +61,8 @@ dataman.resume(token)
 | `batteryLevel` | AOD/表盘绑定（观察到） | 未知 |
 | `calorie` | AOD/表盘绑定（观察到） | 未知 |
 | `heartRate` | AOD/表盘绑定（观察到） | 未知 |
+| `healthHeartRate` | 心率 | 未知 |
+| `healthStepCount` | 步数 | 未知 |
 | `step` | AOD/表盘绑定（观察到） | 未知 |
 | `weatherCondition` | AOD/表盘绑定（观察到） | 未知 |
 
