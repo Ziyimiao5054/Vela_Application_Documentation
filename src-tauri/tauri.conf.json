@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "Xiaomi Lua应用开发文档",
-  "version": "2.0.1",
-  "identifier": "com.docs.luaapp",
+  "productName": "VelaOS 应用开发文档",
+  "version": "2.1.0",
+  "identifier": "com.vela.docs",
   "build": {
     "frontendDist": "../build",
     "devUrl": "http://localhost:3000",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "Lua 应用开发文档",
+        "title": "VelaOS 应用开发文档",
         "width": 800,
         "height": 600,
         "resizable": true,

@@ -2,34 +2,27 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
-  title: 'Lua 应用开发文档',
-  tagline: '模块接口、示例与最佳实践',
+  title: 'VelaOS 应用开发文档',
+  tagline: 'QuickApp、Lua 应用与 NuttX Shell 一站式开发参考',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-org', // Usually your GitHub org/user name.
-  projectName: 'lua-application-docs', // Usually your repo name.
+  organizationName: 'your-org',
+  projectName: 'velaos-app-docs',
 
   onBrokenLinks: 'throw',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+    },
+  },
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
@@ -39,19 +32,44 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          sidebarCollapsed : true,
-          routeBasePath: '/',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        docs: false,
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'quickapp',
+        path: 'docs-quickapp',
+        routeBasePath: 'quickapp',
+        sidebarPath: './sidebars.quickapp.ts',
+        sidebarCollapsed: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'lua',
+        path: 'docs-lua',
+        routeBasePath: 'lua',
+        sidebarPath: './sidebars.lua.ts',
+        sidebarCollapsed: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'shell',
+        path: 'docs-shell',
+        routeBasePath: 'shell',
+        sidebarPath: './sidebars.shell.ts',
+        sidebarCollapsed: true,
+      },
     ],
   ],
 
@@ -60,30 +78,44 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Lua 应用开发文档',
+      title: 'VelaOS 应用开发文档',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'VelaOS 应用开发文档',
         src: 'img/logo.svg',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'docs',
-        //   position: 'left',
-        //   label: '文档',
-        // },
+        {
+          type: 'docSidebar',
+          sidebarId: 'quickappSidebar',
+          docsPluginId: 'quickapp',
+          position: 'left',
+          label: 'QuickApp',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'luaSidebar',
+          docsPluginId: 'lua',
+          position: 'left',
+          label: 'Lua 应用',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'shellSidebar',
+          docsPluginId: 'shell',
+          position: 'left',
+          label: 'NuttX Shell',
+        },
       ],
     },
     footer: {
       style: 'dark',
-      links: [
-      ],
+      links: [],
       copyright: `Copyright © ${new Date().getFullYear()} 极客之爱. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['lua']
+      additionalLanguages: ['lua', 'javascript', 'json', 'bash'],
     },
   } satisfies Preset.ThemeConfig,
 };
