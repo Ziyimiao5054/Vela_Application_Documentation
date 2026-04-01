@@ -1,7 +1,7 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "VelaOS 应用开发文档",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "identifier": "com.vela.docs",
   "build": {
     "frontendDist": "../build",
@@ -32,6 +32,8 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ],
-    "targets": ["nsis"]
+    "targets": [
+      "nsis"
+    ]
   }
 }

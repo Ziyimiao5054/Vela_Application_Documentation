@@ -1,6 +1,6 @@
 [package]
 name = "app"
-version = "2.1.0"
+version = "2.2.0"
 description = "VelaOS 应用开发文档桌面版"
 authors = ["you"]
 license = ""
