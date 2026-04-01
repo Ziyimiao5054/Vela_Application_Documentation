@@ -14,10 +14,10 @@
 
 名称 | 类型 | 默认值 | 必填 | 描述 
 ---|:---:|---|:---:|--- 
-min | `&lt;number&gt;` | ０ | 否 | - 
-max | `&lt;number&gt;` | 100 | 否 | - 
-step | `&lt;number&gt;` | 1 | 否 | - 
-value | `&lt;number&gt;` | 0 | 否 | - 
+min | `<number>` | ０ | 否 | - 
+max | `<number>` | 100 | 否 | - 
+step | `<number>` | 1 | 否 | - 
+value | `<number>` | 0 | 否 | - 
  
 ## 样式
 
@@ -25,10 +25,10 @@ value | `&lt;number&gt;` | 0 | 否 | -
 
 名称 | 类型 | 默认值 | 必填 | 描述 
 ---|:---:|---|:---:|--- 
-color | `&lt;color&gt;` | #f0f0f0 或者 rgb(240, 240, 240) | 否 | 背景条颜色 
-selected-color | `&lt;color&gt;` | #009688 或者 rgb(0, 150, 136) | 否 | 已选择颜色 
-block-color | `&lt;color&gt;` |:---:| 否 | 滑块的颜色 
-padding-[left|right] | `&lt;length&gt;` | 32px | 否 | 左右边距 
+color | `<color>` | #f0f0f0 或者 rgb(240, 240, 240) | 否 | 背景条颜色 
+selected-color | `<color>` | #009688 或者 rgb(0, 150, 136) | 否 | 已选择颜色 
+block-color | `<color>` |:---:| 否 | 滑块的颜色 
+padding-[left|right] | `<length>` | 32px | 否 | 左右边距 
  
 ## 事件
 

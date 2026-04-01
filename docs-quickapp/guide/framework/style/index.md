@@ -65,7 +65,7 @@ tag | div | 选择所有 div 组件
 
 当前样式的选择器的优先级计算保持与浏览器一致，是浏览器 CSS 渲染的一个子集（仅支持：inline, id, class, tag）。
 
-多条 CSS 声明可以匹配到同一个元素 如 div，应用在该元素上的 CSS 声明总体优先级是：inline &gt; #id &gt; .class &gt; tag，这四大类匹配到该元素的多个 CSS 声明，如：`&lt;div id="sample" style="width: 200px;" class="class-div"&gt;&lt;/div&gt;`，其优先级按照各选择器的权值高低之和来比较。选择器的优先级权值如下：
+多条 CSS 声明可以匹配到同一个元素 如 div，应用在该元素上的 CSS 声明总体优先级是：inline &gt; #id &gt; .class &gt; tag，这四大类匹配到该元素的多个 CSS 声明，如：`<div id="sample" style="width: 200px;" class="class-div"></div>`，其优先级按照各选择器的权值高低之和来比较。选择器的优先级权值如下：
 
  * `ID选择器`（例如: #hello）的权值为 10000
 

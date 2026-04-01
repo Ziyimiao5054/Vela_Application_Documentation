@@ -4,7 +4,7 @@ hap链接 指在router模块中支持的以hap://开头的uri，使用场景见[
 
 目前支持的 hap 链接以`hap://app/`开头，支持打开指定的JS 应用，格式如下：
 
-`hap://app/&lt;package&gt;/[path][?key=value]`
+`hap://app/<package>/[path][?key=value]`
 
 参数说明：
 

@@ -10,11 +10,11 @@
 
 ## 代码规范
 
- 1. app.ux文件中的代码，必须写到`&lt;script&gt;&lt;/script&gt;`中，否则代码不会执行！
+ 1. app.ux文件中的代码，必须写到`<script></script>`中，否则代码不会执行！
  2. *.ux文件中，`template`节点只能有一个根节点
  3. 角度相关的css属性必须书写单位，比如`total-angle: 360deg`
  4. `list-item`中，谨慎使用`if`/`else`/`show`等条件判断，保证所有的`list-item`结构一致
- 5. `image`的`src`属性不要使用变量拼接（比如 `src="/common/&#123;&#123;type&#125;&#125;`），否则编译器打包代码会显示警告，建议直接使用变量`src="&#123;&#123;imgPath&#125;&#125;"`
+ 5. `image`的`src`属性不要使用变量拼接（比如 `src="/common/{{type}}`），否则编译器打包代码会显示警告，建议直接使用变量`src="{{imgPath}}"`
 
 ## 常见优化
 

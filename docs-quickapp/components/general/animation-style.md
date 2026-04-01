@@ -14,34 +14,34 @@ Vela JS 应用支持开发者制作动画，提供了`transform`类、`transform
 
 名称 | 类型 | 默认值 | 描述 
 ---|:---:|---|--- 
-transform | `&lt;string&gt;` |:---:| 见下面 transform 操作 
-transform-origin | `&lt;string&gt;` |:---:| 见下面 transform-origin 操作 
-animation-name | `&lt;string&gt;` |:---:| 与@keyframes 的 name 相呼应，见下面@keyframes 属性 
-animation-delay | `&lt;time&gt;` | 0 | 目前支持的单位为[ s(秒) | ms(毫秒) ] 
-animation-duration | `&lt;time&gt;` | 0 | 目前支持的单位为[ s(秒) | ms(毫秒) ] 
-animation-iteration-count | `&lt;integer&gt;` | `infinite` | 1 | 定义动画播放的次数，可设置为`infinite`无限次播放 
-animation-timing-function | linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier(`&lt;number&gt;`, `&lt;number&gt;`, `&lt;number&gt;`, `&lt;number&gt;`) | step-start | step-end | steps(number_of_steps[, step-direction]?) | ease | - 
-transition-property | `&lt;string&gt;` | all | 指定执行 transition 效果的通用样式属性名称，参见详情 
-transition-duration | `&lt;time&gt;` | 0s | 指定 transition 执行时间 
-transition-timing-function | linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier(`&lt;number&gt;`, `&lt;number&gt;`, `&lt;number&gt;`, `&lt;number&gt;`) | step-start | step-end | steps(number_of_steps[, step-direction]?) | ease | 指定 transition 执行时的时间函数。该参数释义与 animation 相同 
-transition-delay | `&lt;time&gt;` | 0s | 指定 transition 开始执行的时间，即当改变元素属性值后多长时间开始执行 transition 效果 
+transform | `<string>` |:---:| 见下面 transform 操作 
+transform-origin | `<string>` |:---:| 见下面 transform-origin 操作 
+animation-name | `<string>` |:---:| 与@keyframes 的 name 相呼应，见下面@keyframes 属性 
+animation-delay | `<time>` | 0 | 目前支持的单位为[ s(秒) | ms(毫秒) ] 
+animation-duration | `<time>` | 0 | 目前支持的单位为[ s(秒) | ms(毫秒) ] 
+animation-iteration-count | `<integer>` | `infinite` | 1 | 定义动画播放的次数，可设置为`infinite`无限次播放 
+animation-timing-function | linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier(`<number>`, `<number>`, `<number>`, `<number>`) | step-start | step-end | steps(number_of_steps[, step-direction]?) | ease | - 
+transition-property | `<string>` | all | 指定执行 transition 效果的通用样式属性名称，参见详情 
+transition-duration | `<time>` | 0s | 指定 transition 执行时间 
+transition-timing-function | linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier(`<number>`, `<number>`, `<number>`, `<number>`) | step-start | step-end | steps(number_of_steps[, step-direction]?) | ease | 指定 transition 执行时的时间函数。该参数释义与 animation 相同 
+transition-delay | `<time>` | 0s | 指定 transition 开始执行的时间，即当改变元素属性值后多长时间开始执行 transition 效果 
  
 **注** ：
 
  * animation-timing-function 类型
 
-cubic-bezier(`&lt;number&gt;`, `&lt;number&gt;`, `&lt;number&gt;`, `&lt;number&gt;`) | step-start | step-end | steps(number_of_steps[, step-direction]?)其中：
+cubic-bezier(`<number>`, `<number>`, `<number>`, `<number>`) | step-start | step-end | steps(number_of_steps[, step-direction]?)其中：
 
 steps(number_of_steps，step-direction)
 
 名称 | 类型 | 默认值 | 必填 | 描述 
 ---|:---:|---|:---:|--- 
-number_of_steps | `&lt;integer&gt;` |:---:| 是 | 表示等间隔步数的正整数 
+number_of_steps | `<integer>` |:---:| 是 | 表示等间隔步数的正整数 
 step-direction | jump-start | jump-end | jump-none | jump-both | start | end | end | 否 | 指示函数左连续或右连续的关键字 
  
  * cubic-bezier(x1, y1, x2, y2)
 
-参数 x1, y1, x2, y2 是 `&lt;number&gt;` 类型的值，代表当前定义的立方贝塞尔曲线中的 P1 和 P2 点的横坐标和纵坐标，x1 和 x2 必须在 [0，1] 范围内，否则当前值无效。
+参数 x1, y1, x2, y2 是 `<number>` 类型的值，代表当前定义的立方贝塞尔曲线中的 P1 和 P2 点的横坐标和纵坐标，x1 和 x2 必须在 [0，1] 范围内，否则当前值无效。
 
 ## transform 操作
 
@@ -49,13 +49,13 @@ step-direction | jump-start | jump-end | jump-none | jump-both | start | end | e
 
 名称 | 类型 
 ---|--- 
-translate | `&lt;length&gt;` | `&lt;percent&gt;` 
-translateX | `&lt;length&gt;` | `&lt;percent&gt;` 
-translateY | `&lt;length&gt;` | `&lt;percent&gt;` 
-scale | `&lt;number&gt;` 
-scaleX | `&lt;number&gt;` 
-scaleY | `&lt;number&gt;` 
-rotate | `&lt;deg&gt;` 
+translate | `<length>` | `<percent>` 
+translateX | `<length>` | `<percent>` 
+translateY | `<length>` | `<percent>` 
+scale | `<number>` 
+scaleX | `<number>` 
+scaleY | `<number>` 
+rotate | `<deg>` 
  
 ## transform-origin 操作
 
@@ -99,11 +99,11 @@ animation-name: Width, translate, rotate;
 
 名称 | 类型 | 默认值 | 描述 
 ---|:---:|---|--- 
-background-color | `&lt;color&gt;` |:---:| - 
-background-position | `&lt;length&gt;` |`&lt;percentage&gt;`| left | right | top | bottom | center | 0px 0px | 描述了背景图片在容器中绘制的位置，支持 1-4 个参数，详情见[背景图样式](background-img-styles.md) 
-opacity | `&lt;number&gt;` |:---:| - 
-width/height | `&lt;length&gt;` |:---:| 暂不支持百分比 
-transform | `&lt;string&gt;` |:---:| 可以对元素进行旋转、缩放、移动 
+background-color | `<color>` |:---:| - 
+background-position | `<length>` |`<percentage>`| left | right | top | bottom | center | 0px 0px | 描述了背景图片在容器中绘制的位置，支持 1-4 个参数，详情见[背景图样式](background-img-styles.md) 
+opacity | `<number>` |:---:| - 
+width/height | `<length>` |:---:| 暂不支持百分比 
+transform | `<string>` |:---:| 可以对元素进行旋转、缩放、移动 
  
 **注** ：
 

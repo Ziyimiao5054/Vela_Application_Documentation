@@ -2,7 +2,7 @@
 
 ## 概述
 
-[`&lt;list&gt;`](list.md)的子组件，用来展示列表具体 item，宽度默认充满 list 组件。
+[`<list>`](list.md)的子组件，用来展示列表具体 item，宽度默认充满 list 组件。
 
 ## 子组件
 
@@ -14,7 +14,7 @@
 
 名称 | 类型 | 默认值 | 必填 | 描述 
 ---|:---:|---|:---:|--- 
-type | `&lt;string&gt;` |:---:| 是 | list-item 类型，值为自定义的字符串，如'loadMore'。**相同的 type 的 list-item 必须具备完全一致的 DOM 结构** 。因此，在 list-item 内部需谨慎使用 if 和 for，因为 if 和 for 可能造成相同的 type 的 list-item 的 DOM 结构不一致，从而引发错误 
+type | `<string>` |:---:| 是 | list-item 类型，值为自定义的字符串，如'loadMore'。**相同的 type 的 list-item 必须具备完全一致的 DOM 结构** 。因此，在 list-item 内部需谨慎使用 if 和 for，因为 if 和 for 可能造成相同的 type 的 list-item 的 DOM 结构不一致，从而引发错误 
  
 ## 样式
 

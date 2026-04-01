@@ -120,8 +120,19 @@ def escape_special_chars_outside_fences(content: str) -> str:
         core = part[:-len(suffix)] if suffix else part
 
         fenced = fence_raw_tag_blocks(core)
-        fenced = fenced.replace("{", "&#123;").replace("}", "&#125;")
-        fenced = fenced.replace("<", "&lt;").replace(">", "&gt;")
+        
+        # 保护单反引号和它内部自动生成的三反引号，避免行内代码的 < 和 > 以及 {} 被转义
+        fenced_parts = re.split(r"(```[\s\S]*?```|`[^`]*`)", fenced)
+        escaped_fenced_parts: list[str] = []
+        for j, fpart in enumerate(fenced_parts):
+            if j % 2 == 1:
+                escaped_fenced_parts.append(fpart)
+            else:
+                fpart = fpart.replace("{", "&#123;").replace("}", "&#125;")
+                fpart = fpart.replace("<", "&lt;").replace(">", "&gt;")
+                escaped_fenced_parts.append(fpart)
+        fenced = "".join(escaped_fenced_parts)
+        
         escaped_parts.append(fenced + suffix)
 
     return "".join(escaped_parts)
@@ -259,7 +270,6 @@ def remove_invalid_image_references(target_root: Path) -> None:
             return match.group(0)
 
         updated = image_pattern.sub(replace_invalid_image, content)
-        updated = re.sub(r"[ \t]{2,}", " ", updated)
         markdown_file.write_text(updated, encoding="utf-8")
 
     for image_name in invalid_names:

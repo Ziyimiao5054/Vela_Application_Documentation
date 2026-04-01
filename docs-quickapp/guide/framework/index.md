@@ -23,7 +23,7 @@ sidebar_label: 框架概览
 
 ### 界面组件
 
-框架提供了一套基础的界面组件，界面组件标签除了支持常用的 HTML5 标签，例如`&lt;div&gt;，&lt;input&gt;`等之外，还提供与原生 UI 相关的组件标签，例如`&lt;switch&gt;，&lt;slider&gt;，&lt;list&gt;`等。具体使用参看[组件](../../components/index.md)。
+框架提供了一套基础的界面组件，界面组件标签除了支持常用的 HTML5 标签，例如`<div>，<input>`等之外，还提供与原生 UI 相关的组件标签，例如`<switch>，<slider>，<list>`等。具体使用参看[组件](../../components/index.md)。
 
 ### 原生接口
 

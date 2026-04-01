@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
@@ -49,6 +49,33 @@ const config: Config = {
         routeBasePath: 'quickapp',
         sidebarPath: './sidebars.quickapp.ts',
         sidebarCollapsed: true,
+        async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
+          const sidebarItems = await defaultSidebarItemsGenerator(args);
+          // 递归替换特定的分类名称或文档名称，避免被爬虫覆盖
+          function processItems(items: any[]) {
+            items.forEach(item => {
+              // 匹配按文件夹生成的 category
+              if (item.type === 'category') {
+                if (item.label === 'other') item.label = '其他';
+                if (item.label === 'devicedebug') item.label = '真机调试';
+                if (item.label === 'emulator') item.label = '设备管理';
+              }
+              // 匹配按文件生成的 doc
+              if (item.type === 'doc') {
+                if (item.id === 'guide/start/use-ide') item.label = '安装环境';
+                if (item.id === 'guide/version/index') item.label = '版本说明';
+                if (item.id === 'guide/framework/other/language-list') item.label = '支持的语言列表';
+                if (item.id === 'tools/start/index') item.label = '快速入门';
+              }
+              // 如果有子项，递归
+              if (item.items) {
+                processItems(item.items);
+              }
+            });
+          }
+          processItems(sidebarItems);
+          return sidebarItems;
+        },
       },
     ],
     [
@@ -73,6 +100,19 @@ const config: Config = {
     ],
   ],
 
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['en', 'zh'],
+        docsRouteBasePath: ['quickapp', 'lua', 'shell'],
+        docsDir: ['docs-quickapp', 'docs-lua', 'docs-shell'],
+        docsPluginIdForPreferredVersion: 'quickapp',
+      },
+    ],
+  ],
+
   themeConfig: {
     colorMode: {
       respectPrefersColorScheme: true,
@@ -89,7 +129,7 @@ const config: Config = {
           sidebarId: 'quickappSidebar',
           docsPluginId: 'quickapp',
           position: 'left',
-          label: 'QuickApp',
+          label: 'JS 快应用',
         },
         {
           type: 'docSidebar',

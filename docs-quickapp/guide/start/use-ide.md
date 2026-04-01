@@ -1,3 +1,6 @@
+---
+sidebar_label: '安装环境'
+---
 # 使用 AIoT-IDE 来开发 JS 应用
 
 ## 下载 AIoT-IDE
@@ -22,9 +25,9 @@ mac 版本下可能会遇到如下安装报错的问题:
 
 遇到此类问题，请按下面方法操作：
 
-1.打开 shell 窗口，输入 ：`sudo xattr -r -d com.apple.quarantine`,如下图示例一。 
-2.敲入空格 **再将应用程序拖入到窗口中** ，会得到下图示例二。 
-3.点击回车，输入密码，再执行该程序即可。
+1. 打开 shell 窗口，输入 ：`sudo xattr -r -d com.apple.quarantine`,如下图示例一。 
+2. 敲入空格 **再将应用程序拖入到窗口中** ，会得到下图示例二。 
+3. 点击回车，输入密码，再执行该程序即可。
 
 ![alt text](../../images/ide-download-2.png)
 

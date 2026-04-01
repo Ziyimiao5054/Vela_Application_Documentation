@@ -455,7 +455,7 @@ CSS代码如下：
 
 我们已经实现了页面数据的渲染，但是目前所有的数据都是直接写到模板代码中，不能在程序中动态修改。
 
-如果需要在程序中动态修改界面上展示的数据，需要将数据存储到[页面数据对象](../framework/script/page-data.md)中，然后使用双大括号语法来引用数据，比如`&#123;&#123; name &#125;&#125;`，详细使用方法可以参考[模板语法](../framework/template/index.md)。
+如果需要在程序中动态修改界面上展示的数据，需要将数据存储到[页面数据对象](../framework/script/page-data.md)中，然后使用双大括号语法来引用数据，比如`{{ name }}`，详细使用方法可以参考[模板语法](../framework/template/index.md)。
 
 数据定义，需要通过JavaScript脚本来实现。跟HTML一样，JavaScript代码需要放在`script`标签中：
 ```html

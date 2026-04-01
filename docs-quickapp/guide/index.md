@@ -7,7 +7,7 @@ sidebar_label: 开发指南概览
 
 Xiaomi Vela JS 应用是小米公司开发的一种应用类型，它是基于小米的物联网嵌入式软件平台 Xiaomi Vela OS 开发的。本文将介绍 Xiaomi Vela JS 应用的特点、应用场景以及开发支持，帮助开发者更好地了解和使用这一应用类型。
 
-如果您想快速了解如何开发 Xiaomi Vela JS 应用，并且希望快速上手，请直接访问 [快速入门](start.md) 章节。
+如果您想快速了解如何开发 Xiaomi Vela JS 应用，并且希望快速上手，请直接访问 [快速入门](start/index.md) 章节。
 
 ## 应用特点
 

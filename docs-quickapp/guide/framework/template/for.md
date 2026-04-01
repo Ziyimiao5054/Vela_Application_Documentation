@@ -6,11 +6,11 @@
 
 提示
 
-`for指令`根据源数据数组渲染列表，支持的写法如下（其中`&#123;&#123;&#125;&#125;`可以省略）：
+`for指令`根据源数据数组渲染列表，支持的写法如下（其中`{{}}`可以省略）：
 
- * `for="&#123;&#123;list&#125;&#125;"` `list`为源数据数组，默认的数组元素名为`$item`；
- * `for="&#123;&#123;value in list&#125;&#125;"` `value`为自定义的数组元素名，默认的数组元素索引名为`$idx`；
- * `for="&#123;&#123;(index, value) in list&#125;&#125;"` `index`为自定义的数组元素索引名，`value`为自定义的数组元素名。
+ * `for="{{list}}"` `list`为源数据数组，默认的数组元素名为`$item`；
+ * `for="{{value in list}}"` `value`为自定义的数组元素名，默认的数组元素索引名为`$idx`；
+ * `for="{{(index, value) in list}}"` `index`为自定义的数组元素索引名，`value`为自定义的数组元素名。
 
 提示
 
@@ -65,7 +65,7 @@
 
 示例代码中，在渲染页面时，`div.row`的结构，会根据 script 中的数据 list 的定义，被循环的生成多个。
 
-`tid="uniqueId"`，数组元素的某个属性名，不一定叫`uniqueId`。它类似于React的`key=&#123;item.uniqueId&#125;`或vue的`:key="item.uniqueId"`，用于优化渲染速度。
+`tid="uniqueId"`，数组元素的某个属性名，不一定叫`uniqueId`。它类似于React的`key={item.uniqueId}`或vue的`:key="item.uniqueId"`，用于优化渲染速度。
 
 当数据修改时，数据不改变的dom不会被重新渲染，已经改变的数据所在的dom才会被重新渲染，因此我们必须保证`uniqueId`这个属性值在每个数组元素都不一样。
 

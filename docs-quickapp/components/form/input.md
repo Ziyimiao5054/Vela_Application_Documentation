@@ -15,9 +15,9 @@
 名称 | 类型 | 默认值 | 必填 | 描述 
 ---|:---:|---|:---:|--- 
 type | button | checkbox | radio | | button | 否 | 支持动态修改 
-checked | `&lt;boolean&gt;` | false | 否 | 当前组件的 checked 状态，type 为 checkbox 时生效，可触发 checked 伪类（checked 伪类样式还未支持） 
-name | `&lt;string&gt;` |:---:| 否 | input 组件名称 
-value | `&lt;string&gt;` |:---:| 否 | input 组件的值 
+checked | `<boolean>` | false | 否 | 当前组件的 checked 状态，type 为 checkbox 时生效，可触发 checked 伪类（checked 伪类样式还未支持） 
+name | `<string>` |:---:| 否 | input 组件名称 
+value | `<string>` |:---:| 否 | input 组件的值 
  
 ## 样式
 
@@ -25,10 +25,10 @@ value | `&lt;string&gt;` |:---:| 否 | input 组件的值
 
 名称 | 类型 | 默认值 | 必填 | 描述 
 ---|:---:|---|:---:|--- 
-color | `&lt;color&gt;` | rgba(0, 0, 0, 0.87) | 否 | 文本颜色 
-font-size | `&lt;length&gt;` | 37.5px | 否 | 文本尺寸 
-width | `&lt;length&gt;` | `&lt;percentage&gt;` |:---:| 否 | type 为 button 时，默认值为 128px 
-height | `&lt;length&gt;` | `&lt;percentage&gt;` |:---:| 否 | type 为 button 时，默认值为 70px 
+color | `<color>` | rgba(0, 0, 0, 0.87) | 否 | 文本颜色 
+font-size | `<length>` | 37.5px | 否 | 文本尺寸 
+width | `<length>` | `<percentage>` |:---:| 否 | type 为 button 时，默认值为 128px 
+height | `<length>` | `<percentage>` |:---:| 否 | type 为 button 时，默认值为 70px 
  
 ## 事件
 

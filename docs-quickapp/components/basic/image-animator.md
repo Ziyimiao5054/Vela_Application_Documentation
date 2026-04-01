@@ -14,22 +14,22 @@
 
 名称 | 类型 | 默认值 | 必填 | 描述 
 ---|:---:|---|:---:|--- 
-images | `Array&lt;ImageFrame&gt;` |:---:| 是 | 设置图片帧信息集合。每一帧的帧信息包含图片路径、图片大小和图片位置信息 
-iteration | `&lt;number&gt;`|`&lt;string&gt;` | `infinite` | 否 | 设置帧动画播放次数。number表示固定次数，infinite枚举表示无限次数播放 
-reverse | `&lt;boolean&gt;` | `false` | 否 | 设置播放顺序。false表示从第1张图片播放到最后1张图片； true表示从最后1张图片播放到第1张图片 
-fixedsize | `&lt;boolean&gt;` | `true` | 否 | 设置图片大小是否固定为组件大小。 true表示图片大小与组件大小一致，此时设置图片的width 、height 、top 和left属性是无效的。false表示每一张图片的 width 、height 、top和left属性都要单独设置 
-duration | `&lt;string&gt;` |:---:| 否 | 设置单次播放时长。单位支持[s(秒)|ms(毫秒)]，默认单位为ms 
-fillmode | `&lt;string&gt;` | `forwards` | 否 | 指定帧动画执行结束后的状态。可选项有：none：恢复初始状态。forwards：保持帧动画结束时的状态（在最后一个关键帧中定义） 
+images | `Array<ImageFrame>` |:---:| 是 | 设置图片帧信息集合。每一帧的帧信息包含图片路径、图片大小和图片位置信息 
+iteration | `<number>`|`<string>` | `infinite` | 否 | 设置帧动画播放次数。number表示固定次数，infinite枚举表示无限次数播放 
+reverse | `<boolean>` | `false` | 否 | 设置播放顺序。false表示从第1张图片播放到最后1张图片； true表示从最后1张图片播放到第1张图片 
+fixedsize | `<boolean>` | `true` | 否 | 设置图片大小是否固定为组件大小。 true表示图片大小与组件大小一致，此时设置图片的width 、height 、top 和left属性是无效的。false表示每一张图片的 width 、height 、top和left属性都要单独设置 
+duration | `<string>` |:---:| 否 | 设置单次播放时长。单位支持[s(秒)|ms(毫秒)]，默认单位为ms 
+fillmode | `<string>` | `forwards` | 否 | 指定帧动画执行结束后的状态。可选项有：none：恢复初始状态。forwards：保持帧动画结束时的状态（在最后一个关键帧中定义） 
  
 ImageFrame说明
 
 名称 | 类型 | 默认值 | 必填 | 描述 
 ---|:---:|---|:---:|--- 
-src | `&lt;uri&gt;` |:---:| 是 | 图片路径 
-width | `&lt;length&gt;` | 0 | 否 | 图片宽度 
-height | `&lt;length&gt;` | 0 | 否 | 图片高度 
-top | `&lt;length&gt;` | 0 | 否 | 图片相对于组件左上角的纵向坐标 
-left | `&lt;length&gt;` | 0 | 否 | 图片相对于组件左上角的横向坐标 
+src | `<uri>` |:---:| 是 | 图片路径 
+width | `<length>` | 0 | 否 | 图片宽度 
+height | `<length>` | 0 | 否 | 图片高度 
+top | `<length>` | 0 | 否 | 图片相对于组件左上角的纵向坐标 
+left | `<length>` | 0 | 否 | 图片相对于组件左上角的横向坐标 
  
 ## 样式
 

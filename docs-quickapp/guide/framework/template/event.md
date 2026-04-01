@@ -10,7 +10,7 @@
 <text @click="press"></text>
 ``` 
 
-**fn** ：`fn`为事件回调函数名（在`&lt;script&gt;`中有对应的函数实现），上例中`press`为事件回调函数。
+**fn** ：`fn`为事件回调函数名（在`<script>`中有对应的函数实现），上例中`press`为事件回调函数。
 
 ## 传参
 
@@ -38,7 +38,7 @@
 
 ### 变量
 
-`&lt;script&gt;`中定义的页面的数据变量（前面不用写`this`）。
+`<script>`中定义的页面的数据变量（前面不用写`this`）。
 ```html
 <template>
  <div class="page">

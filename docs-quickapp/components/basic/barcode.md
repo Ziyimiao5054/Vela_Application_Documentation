@@ -22,8 +22,8 @@ value | `string` |:---:| 是 | 条形码内容，码制为Code128码，长度小
 
 名称 | 类型 | 默认值 | 必填 | 描述 
 ---|:---:|---|:---:|--- 
-color | `&lt;color&gt;` | #000000 | 否 | 条形码颜色 
-background-color | `&lt;color&gt;` | #ffffff | 否 | 条形码背景颜色 
+color | `<color>` | #000000 | 否 | 条形码颜色 
+background-color | `<color>` | #ffffff | 否 | 条形码背景颜色 
  
 注意
 

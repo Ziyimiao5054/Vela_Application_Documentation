@@ -56,7 +56,7 @@ APP，页面均通过 ux 后缀文件编写，ux 后缀文件由[template 模板
 
 当前`app.ux`编译后会包含`manifest配置信息`（可以在`npm run build`之后查看文件内容），所以请不要删除`/**manifest**/`的注释内容标识。
 
-您可以在`&lt;script&gt;`中引入一些公共的脚本，并暴露在当前 app 的对象上，如下所示，然后就可以在页面 ux 文件的 ViewModel 中，通过`this.$app.$def.util`访问。
+您可以在`<script>`中引入一些公共的脚本，并暴露在当前 app 的对象上，如下所示，然后就可以在页面 ux 文件的 ViewModel 中，通过`this.$app.$def.util`访问。
 ```html
 <script>
  /**

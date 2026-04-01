@@ -2,7 +2,7 @@
 
 通用事件，即所有组件都支持的`事件回调`。
 
-开发者可以在组件标签上使用`on&#123;eventName&#125;`（如`onclick`）或`@&#123;eventName&#125;`（如`@click`）注册回调事件。
+开发者可以在组件标签上使用`on{eventName}`（如`onclick`）或`@{eventName}`（如`@click`）注册回调事件。
 
 更详细的讲解，可查阅[事件绑定](../../guide/framework/template/event.md)文档了解。
 

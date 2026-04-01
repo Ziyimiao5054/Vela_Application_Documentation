@@ -18,17 +18,17 @@
 
 名称 | 类型 | 默认值 | 描述 
 ---|:---:|---|--- 
-id | `&lt;string&gt;` |:---:| 唯一标识 
-style | `&lt;string&gt;` |:---:| 样式声明 
-class | `&lt;string&gt;` |:---:| 引用样式表 
+id | `<string>` |:---:| 唯一标识 
+style | `<string>` |:---:| 样式声明 
+class | `<string>` |:---:| 引用样式表 
  
 ## 渲染属性
 
 名称 | 类型 | 默认值 | 描述 
 ---|:---:|---|--- 
-for | `&lt;array&gt;` |:---:| 根据数据列表，循环展开当前标签 
-if | `&lt;boolean&gt;` |:---:| 根据数据 boolean 值，添加或移除当前标签 
-show | `&lt;boolean&gt;` |:---:| 根据数据 boolean 值，显示或隐藏当前标签，相当于控制&#123; display: flex | none &#125; 
+for | `<array>` |:---:| 根据数据列表，循环展开当前标签 
+if | `<boolean>` |:---:| 根据数据 boolean 值，添加或移除当前标签 
+show | `<boolean>` |:---:| 根据数据 boolean 值，显示或隐藏当前标签，相当于控制&#123; display: flex | none &#125; 
  
 渲染属性工作方式详见[template 模板](../../guide/framework/template/index.md)。
 

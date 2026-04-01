@@ -6,7 +6,7 @@
 
 ## 子组件
 
-仅支持[`&lt;list-item&gt;`](list-item.md)
+仅支持[`<list-item>`](list-item.md)
 
 ## 属性
 
@@ -14,7 +14,7 @@
 
 名称 | 类型 | 默认值 | 必填 | 描述 
 ---|:---:|---|:---:|--- 
-bounces | `&lt;boolean&gt;` | false | 否 | 是否边界回弹 
+bounces | `<boolean>` | false | 否 | 是否边界回弹 
  
 ## 样式
 
@@ -28,7 +28,7 @@ bounces | `&lt;boolean&gt;` | false | 否 | 是否边界回弹
 
 名称 | 参数 | 描述 
 ---|:---:|--- 
-scroll | &#123;scrollX: `&lt;number&gt;`, scrollY: `&lt;number&gt;`, scrollState: `&lt;stateValue&gt;`&#125; | 列表滑动； 
+scroll | &#123;scrollX: `<number>`, scrollY: `<number>`, scrollState: `<stateValue>`&#125; | 列表滑动； 
 stateValue 取值说明： 
 0：list停止滑动 
 1：list正在通过用户的手势滑动 

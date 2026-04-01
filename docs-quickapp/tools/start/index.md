@@ -1,6 +1,6 @@
 ---
 title: AIoT-IDE 简介
-sidebar_label: AIoT-IDE 简介
+sidebar_label: 快速入门
 ---
 
 # AIoT-IDE 简介
@@ -13,7 +13,7 @@ sidebar_label: AIoT-IDE 简介
  * Vela JS应用 打包发布
  * Vela JS应用 真机调试
 
-本章主要介绍 `AIoT-IDE` 的核心功能。如需下载安装请查看，请直接访问 [安装环境](../guide/start/use-ide.md) 章节。
+本章主要介绍 `AIoT-IDE` 的核心功能。如需下载安装请查看，请直接访问 [安装环境](../../guide/start/use-ide.md) 章节。
 
 ## 项目结构
 

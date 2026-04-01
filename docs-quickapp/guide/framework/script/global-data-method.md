@@ -114,7 +114,7 @@ if (this.$canIUse('scroll.attr.scroll-x')) {
 
 ### this.$watch {#thiswatch} &#123;#thiswatch&#125;
 
-监控数据改变。动态添加属性/事件绑定，属性必须在 data 中定义，handler 函数必须在`&lt;script&gt;`定义，当属性值发生变化时事件被触发。 
+监控数据改变。动态添加属性/事件绑定，属性必须在 data 中定义，handler 函数必须在`<script>`定义，当属性值发生变化时事件被触发。 
 如果是监听对象中的属性，参数请使用.分割，如：$watch(xxx.xxx.xxx, methodName)。
 
 #### 参数

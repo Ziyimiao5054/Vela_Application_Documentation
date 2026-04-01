@@ -13,19 +13,19 @@
 
 ## 连接
 
-1.打开rpk 先在真机上打开安装好的真机调试debug-app（图中红框标记的）
+1. 打开rpk 先在真机上打开安装好的真机调试debug-app（图中红框标记的）
 
 ![alt text](../../images/ide-emulator-22.png)
 
-2.进行连接 打开debug-app后，点击开启调试，debug-app的中间按钮状态进入到【等待IDE连接】 ![alt text](../../images/ide-emulator-23.png)
+2. 进行连接 打开debug-app后，点击开启调试，debug-app的中间按钮状态进入到【等待IDE连接】 ![alt text](../../images/ide-emulator-23.png)
 
-3.IDE端连接 在电脑端打开AIOT-IDE，进入真机调试界面 ![alt text](../../images/ide-emulator-24.png)
+3. IDE端连接 在电脑端打开AIOT-IDE，进入真机调试界面 ![alt text](../../images/ide-emulator-24.png)
 
-4.开始连接 点击连接设备，输入设备IDE（设备ID从上面的debug-App中的设备ID获取），点击连接
+4. 开始连接 点击连接设备，输入设备IDE（设备ID从上面的debug-App中的设备ID获取），点击连接
 
 ![alt text](../../images/ide-emulator-25.png)
 
-5.连接成功 连接成功后，按钮下面列表中出现一条真机信息，状态显示为Connected
+5. 连接成功 连接成功后，按钮下面列表中出现一条真机信息，状态显示为Connected
 
 ![alt text](../../images/ide-emulator-26.png)
 
@@ -33,7 +33,7 @@
 
 在真机连接成功后，可进入调试阶段，将当前开发的vela应用在真机上调试。
 
-1.选择设备 在顶部tab栏中点击连接设备，选择真机设备，然后点击调试，进入真机调试模式。
+1. 选择设备 在顶部tab栏中点击连接设备，选择真机设备，然后点击调试，进入真机调试模式。
 
 ![alt text](../../images/ide-emulator-27.png)
 
@@ -41,7 +41,7 @@
 
 ![alt text](../../images/ide-emulator-29.png)
 
-2.进入真机调试 调试运行成功后，真机上会自动打开当前应用，AIOT-IDE底部会直接打开调试面板
+2. 进入真机调试 调试运行成功后，真机上会自动打开当前应用，AIOT-IDE底部会直接打开调试面板
 
 ![alt text](../../images/ide-emulator-30.png)
 
@@ -49,10 +49,10 @@
 
 ![alt text](../../images/ide-emulator-31.png)
 
-4.推送其他rpk 在真机调试页面中可点击推送rpk按钮，选择要推送的非当前项目rpk进行推送，进行真机调试。
+4. 推送其他rpk 在真机调试页面中可点击推送rpk按钮，选择要推送的非当前项目rpk进行推送，进行真机调试。
 
 ![alt text](../../images/ide-emulator-32.png)
 
-5.真机调试效果 在AIOT-IDE调试面板上进行调试，真机会实时显示调试效果(但不支持热更新，如要修改源码可点击打包按钮打包当前应用，通过第四步进行rpk安装)
+5. 真机调试效果 在AIOT-IDE调试面板上进行调试，真机会实时显示调试效果(但不支持热更新，如要修改源码可点击打包按钮打包当前应用，通过第四步进行rpk安装)
 
 ![alt text](../../images/ide-emulator-33.png) ![alt text](../../images/ide-emulator-34.png)

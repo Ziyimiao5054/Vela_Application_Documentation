@@ -1,0 +1,14 @@
+
+> my-website@0.0.0 build
+> docusaurus build
+
+[INFO] [zh-Hans] Creating an optimized production build...
+Warn: `blogDir` doesn't exist: "C:\Users\28927\Documents\Dev\WebProject\Documentation\LuaApplication\my-website\blog".
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Server
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Server: Compiled successfully in 12.17s
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Client: Compiled successfully in 28.25s
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.
